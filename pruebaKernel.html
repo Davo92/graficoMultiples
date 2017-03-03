@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>David Romero Araez</title>
+    </head>
+
+
+    <body>
+        <!-- EMPIEZA LA NAVBAR -->
+        <div id="wrapper1" class="container-fluid">
+            <div class="panel-group" id="accordion">
+                <div class="panel-group" id="accordion2">
+                    <h1 id ="principal" class="titulo">Géneros Musicales</h1>
+                    <div class="panel panel-default lenguajes">
+                        <div class="panel-heading" id="rockColor" data-toggle="collapse" data-parent="#accordion" href="#collapse1">     
+                            <h4 class="panel-title">
+                                ROCK
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse divRock">
+                            <div class="panel-body">
+                                <table style="width:100%" border="1" id="tablaRock">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <p id="totalRock"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default lenguajes">
+                        <div class="panel-heading" id="jazzColor" data-toggle="collapse" data-parent="#accordion" href="#collapse2">     
+                            <h4 class="panel-title">
+                                JAZZ
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse divJazz">
+                            <div class="panel-body">
+                                <table style="width:100%" border="1" id="tablaJazz">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <p id="totalJazz"></p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="panel panel-default lenguajes">
+                        <div class="panel-heading" id="classicColor" data-toggle="collapse" data-parent="#accordion" href="#collapse3">     
+                            <h4 class="panel-title">
+                                CLASSICAL
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse divClassic">
+                            <div class="panel-body">
+                                <table style="width:100%" border="1" id="tablaClassical">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <p id="totalClassical"></p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="panel panel-default lenguajes">
+                        <div class="panel-heading" id="soulColor" data-toggle="collapse" data-parent="#accordion" href="#collapse4">     
+                            <h4 class="panel-title">
+                                SOUL
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse divSoul">
+                            <div class="panel-body">
+                                <table style="width:100%" border="1" id="tablaSoul">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <p id="totalSoul"></p>
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="panel panel-default lenguajes">
+                        <div class="panel-heading" id="popColor" data-toggle="collapse" data-parent="#accordion" href="#collapse5">     
+                            <h4 class="panel-title">
+                                POP
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse divPop">
+                            <div class="panel-body">
+                                <table style="width:100%" border="1" id="tablaPop">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <p id="totalPop"></p>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+            </div> 
+            <br>
+            <script src="../JS/Chart.js"></script>
+            <div>
+               <h1>Gráfico del tiempo de duración medio por canción, ordenados por género</h1>
+            </div>
+            <div id="grafico">
+                <canvas id="chart-area" width="260" height="300"></canvas>
+                <canvas id="chart-area2" width="260" height="300"></canvas>
+            </div>
+            <div id="leyenda">
+                <p>Rock <span id="ley">·|||||||||·</span></p>
+                <p>Jazz <span id="ley2">·|||||||||·</span></p>
+                <p>Classical <span id="ley3">·|||||||||·</span></p>
+                <p>Soul <span id="ley4">·|||||||||·</span></p>
+                <p>Pop <span id="ley5">·|||||||||·</span></p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <footer id="footer" class="container-fluid">
+                <p class="piedepagina">PROYECTO UBIQUM PARA KERNEL ANALITYCS BY: DAVID ROMERO ARAEZ</p>
+            </footer>
+        </div>
+        <script language="javascript" src="../JS/stadistics.js"></script>
+        <script src="/JS/objeto.js"></script>
+        <script language="javascript" src="../JS/pruebaKernel.js"></script>
+    </body>
+</html>

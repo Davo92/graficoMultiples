@@ -1,0 +1,128 @@
+body{
+    background-color: #ddd0d0 !important;
+}
+
+#grafico{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 20px;
+    background: #dedede;
+    border-radius: 5em;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+h4{
+    font-weight: bold !important;
+}
+
+
+#footer {
+    position:absolute;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#leyenda{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around
+}
+
+#ley{
+    width: 100%;
+    color: #0b82e7;
+    background-color: #0b82e7;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#ley2{
+    width: 100%;
+    color: #e3e860;
+    background-color: #e3e860;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#ley3{
+    width: 100%;
+    color: #eb5d82;
+    background-color: #eb5d82;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#ley4{
+    width: 100%;
+    color: #5ae85a;
+    background-color: #5ae85a;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#ley5{
+    width: 100%;
+    color: #e965db;
+    background-color: #e965db;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#rockColor{
+    
+}
+
+#rockColor {
+    background: #0b82e7 !important;
+    border-radius: 5px;
+}
+
+#jazzColor {
+    background: #e3e860 !important;
+    border-radius: 5px;
+}
+
+#classicColor {
+    background: #eb5d82 !important;
+    border-radius: 5px;
+}
+
+#soulColor {
+    background: #5ae85a !important;
+    border-radius: 5px;
+}
+
+#popColor {
+    background: #e965db !important;
+    border-radius: 5px;
+}
+
+.divRock{
+    background:  rgba(11, 130, 231, 0.29) !important;
+}
+
+.divJazz{
+    background: rgba(227, 232, 96, 0.29) !important;
+}
+
+.divClassic{
+    background:  rgba(235, 93, 130, 0.29) !important;
+}
+
+.divSoul{
+    background:  rgba(90, 232, 90, 0.26) !important;
+}
+
+.divPop{
+    background:  rgba(233, 101, 219, 0.28) !important;
+}
